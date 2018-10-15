@@ -1,11 +1,11 @@
 import React from 'react';
 import { Link } from 'gatsby';
 
-export default () => (
+const ContactPage = () => (
   <div>
-    <h2>Hello world!</h2>
-    <br />
-    <Link to="/contact/">Go to Contact</Link>
+    <h1>Contact page</h1>
+
+    <Link to="/">Go to Home</Link>
     <br />
     <Link to="/about/">Go to About</Link>
     <br />
@@ -13,3 +13,5 @@ export default () => (
     <br />
   </div>
 );
+
+export default ContactPage;
