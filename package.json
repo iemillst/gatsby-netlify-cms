@@ -8,6 +8,8 @@
     "serve": "gatsby serve"
   },
   "dependencies": {
+    "@material-ui/core": "^3.3.0",
+    "@material-ui/icons": "^3.0.1",
     "babel-plugin-styled-components": "^1.8.0",
     "gatsby": "^2.0.0",
     "gatsby-cli": "^2.4.1",
