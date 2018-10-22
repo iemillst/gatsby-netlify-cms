@@ -1,40 +1,40 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { withStyles } from '@material-ui/core/styles'
-import Drawer from '@material-ui/core/Drawer'
-import List from '@material-ui/core/List'
-import ListItem from '@material-ui/core/ListItem'
-import ListItemText from '@material-ui/core/ListItemText'
-import MenuIcon from '@material-ui/icons/Menu'
-import { IconButton } from '../../node_modules/@material-ui/core'
+import React from 'react';
+import PropTypes from 'prop-types';
+import { withStyles } from '@material-ui/core/styles';
+import Drawer from '@material-ui/core/Drawer';
+import List from '@material-ui/core/List';
+import ListItem from '@material-ui/core/ListItem';
+import ListItemText from '@material-ui/core/ListItemText';
+import MenuIcon from '@material-ui/icons/Menu';
+import { IconButton } from '../../node_modules/@material-ui/core';
 
 const styles = theme => ({
   root: {
     width: '100%',
     maxWidth: 360,
-    backgroundColor: theme.palette.background.paper,
+    backgroundColor: theme.palette.background.paper
   },
   list: {
-    width: 250,
+    width: 250
   },
   fullList: {
-    width: 'auto',
-  },
-})
+    width: 'auto'
+  }
+});
 
 class HeaderDrawer extends React.Component {
   state = {
-    right: false,
-  }
+    right: false
+  };
 
   toggleDrawer = open => () => {
     this.setState({
-      right: open,
-    })
-  }
+      right: open
+    });
+  };
 
   render() {
-    const { classes } = this.props
+    const { classes } = this.props;
 
     const sideList = (
       <div className={classes.root}>
@@ -54,7 +54,7 @@ class HeaderDrawer extends React.Component {
           </ListItem>
         </List>
       </div>
-    )
+    );
     /*
     const fullList = (
       <div className={classes.fullList}>
@@ -72,7 +72,7 @@ class HeaderDrawer extends React.Component {
             color: 'inherit',
             ariaLabel: 'Menu',
             marginLeft: -12,
-            marginRight: 20,
+            marginRight: 20
           }}
         >
           <MenuIcon aria-haspopup="true" />
@@ -93,12 +93,13 @@ class HeaderDrawer extends React.Component {
           </div>
         </Drawer>
       </div>
-    )
+    );
   }
 }
 
 HeaderDrawer.propTypes = {
-  classes: PropTypes.object.isRequired,
-}
+  classes: PropTypes.object.isRequired
+};
 
-export default withStyles(styles)(HeaderDrawer)
+export default withStyles(styles)(HeaderDrawer);
+//

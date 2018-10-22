@@ -1,25 +1,25 @@
-import React from 'react'
-import Menu from '@material-ui/core/Menu'
-import MenuItem from '@material-ui/core/MenuItem'
-import IconButton from '@material-ui/core/IconButton'
-import MenuIcon from '@material-ui/icons/Menu'
-import { Link } from 'gatsby'
+import React from 'react';
+import Menu from '@material-ui/core/Menu';
+import MenuItem from '@material-ui/core/MenuItem';
+import IconButton from '@material-ui/core/IconButton';
+import MenuIcon from '@material-ui/icons/Menu';
+import { Link } from 'gatsby';
 
 class SimpleMenu extends React.Component {
   state = {
-    anchorEl: null,
-  }
+    anchorEl: null
+  };
 
   handleClick = event => {
-    this.setState({ anchorEl: event.currentTarget })
-  }
+    this.setState({ anchorEl: event.currentTarget });
+  };
 
   handleClose = () => {
-    this.setState({ anchorEl: null })
-  }
+    this.setState({ anchorEl: null });
+  };
 
   render() {
-    const { anchorEl } = this.state
+    const { anchorEl } = this.state;
 
     return (
       <div>
@@ -29,7 +29,7 @@ class SimpleMenu extends React.Component {
             color: 'inherit',
             ariaLabel: 'Menu',
             marginLeft: -12,
-            marginRight: 20,
+            marginRight: 20
           }}
         >
           <MenuIcon
@@ -58,8 +58,9 @@ class SimpleMenu extends React.Component {
           </MenuItem>
         </Menu>
       </div>
-    )
+    );
   }
 }
 
-export default SimpleMenu
+export default SimpleMenu;
+//
